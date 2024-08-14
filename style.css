@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: radial-gradient(
+    circle,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 118, 1) 51%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  margin: 0;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calculation-screen {
+  width: 95%;
+  height: 40px;
+  border: none;
+  color: #000;
+  text-align: right;
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.calculator-screen {
+  width: 95%;
+  height: 80px;
+  background-color: #37a1af;
+  border: none;
+  color: white;
+  text-align: right;
+  padding: 10px;
+  font-size: 2.5rem;
+}
+
+.calculator-keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #1cbe4f;
+}
+
+button.operator {
+  background-color: #ff9500;
+  color: white;
+}
+
+button.operator:hover {
+  background-color: grey;
+}
+
+button.equal-sign {
+  background-color: #ff9500;
+  color: white;
+  grid-column: span 2;
+}
+
+button.equal-sign:hover {
+  background-color: #1cbe4f;
+}
+
+button.all-clear {
+  background-color: #ff3b30;
+  color: white;
+  grid-column: span 2;
+}
+
+button.all-clear:hover {
+  background-color: red;
+}
